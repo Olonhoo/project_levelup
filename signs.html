@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="bootstrap-5.2.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+    <title>Вывески</title>
+    <script src="bootstrap-5.2.0-dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="header_firstpart">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-4">
+                        <div class="d-flex flex-lg-column py-3">
+                            <span class="header_firstpar pb-2">Где мы находимся</span>
+                            <a href="#map" class="header_secondpar">г.
+                                Новосибирск, поселок Садовый ,ул. Российская 15</a>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="d-flex flex-lg-column py-3">
+                            <span class="header_firstpar pb-2">Телефон для заказов и вопросов:</span>
+                            <a href="tel:+7 (913) 917 07 82" class="header_secondpar">+7 (913) 917 07 82</a>
+                        </div>
+                    </div>
+                    <div class="col-4 d-flex justify-content-between py-3 align-items-center">
+                        <div class="">
+                            <p class="header_firstpar">Почта для связи:</p>
+                            <a href="mailto:boss_level_up@bk.ru" class="header_secondpar">boss_level_up@bk.ru</a>
+                        </div>
+                        <div class="">
+                            <a href="#" class="vk_icon pe-2"><img src="img/vk_icon.svg" alt="icon"></a>
+                            <a href="#"><img src="img/inst_icon.svg" alt="icon"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header_secondpart">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-7 d-flex align-items-center justify-content-between header_question_block">
+                        <div class="container-fluid navbar_button">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                                <i class="fa-solid fa-bars"></i>
+                            </button>
+                            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                                aria-labelledby="offcanvasNavbarLabel">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Level Up</h5>
+                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                                        aria-label="Закрыть"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" aria-current="page" href="#">Главная</a>
+                                        </li>
+                                        <form class="d-flex" role="search">
+                                            <input class="form-control me-2" type="search" placeholder="Поиск"
+                                                aria-label="Поиск">
+                                            <button class="btn btn-outline-success" type="submit">Поиск</button>
+                                        </form>
+                                        <li class="nav-item">
+                                            <a class="nav-link mt-3" href="#">Объемные буквы</a>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link active" aria-current="page" href="signs.html">Вывески</a>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link active" aria-current="page" href="#">Информационные
+                                                стенды</a>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link active" aria-current="page" href="#">Световые короба
+                                                (лайт-боксы)</a>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link active" aria-current="page" href="#">Pos-материалы</a>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link active" aria-current="page" href="#">Таблички</a>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <div class="d-flex align-items-center flex pt-5">
+                                                <img src="img/footerlogo.png" class="pe-2" alt="some img">
+                                                <h5 class="header_secondpar">ООО “ЛЕВЕЛ АП”</h5>
+                                            </div>
+                                            <div class="d-flex flex-lg-column pt-4">
+                                                <p class="header_firstpar pb-2">Где мы находимся</p>
+                                                <a href="#map" class="header_secondpar">г.
+                                                    Новосибирск, поселок Садовый ,ул. Российская 15</a>
+                                            </div>
+                                            <div class="d-flex flex-lg-column pt-4">
+                                                <span class="header_firstpar pb-2">Телефон для заказов и
+                                                    вопросов:</span>
+                                                <a href="tel:+7 (913) 917 07 82" class="header_secondpar">+7 (913) 917
+                                                    07 82</a>
+                                            </div>
+                                            <div class="d-flex flex-lg-column pt-4">
+                                                <span class="header_firstpar pb-2">Почта для связи:</span>
+                                                <a href="mailto:boss_level_up@bk.ru"
+                                                    class="header_secondpar">boss_level_up@bk.ru</a>
+                                            </div>
+                                            <div class="d-flex flex-lg-column pt-4">
+                                                <nav class="navbar">
+                                                    <div>
+                                                        <a class="navbar-brand footer_anchor" href="#">
+                                                            <img src="img/vk_icon.svg" alt="" width="30" height="24"
+                                                                class="d-inline-block align-text-top">
+                                                            boss_level_up
+                                                        </a>
+                                                    </div>
+                                                </nav>
+                                            </div>
+                                            <div class="d-flex flex-lg-column pb-4">
+                                                <nav class="navbar">
+                                                    <div>
+                                                        <a class="navbar-brand footer_anchor" href="#">
+                                                            <img src="img/inst_icon.svg" alt="" width="30" height="24"
+                                                                class="d-inline-block align-text-top">
+                                                            boss_level_up
+                                                        </a>
+                                                    </div>
+                                                </nav>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="index.html"><img src="img/main_img.png" alt="some img"></a>
+                        <h1 class="header_logo_h">Рекламно - производственная компания </h1>
+                    </div>
+                    <div class="col-5 d-flex align-items-center justify-content-between">
+                        <div class="header_help d-flex flex-lg-column">
+                            <span class="header_firstpar pb-3">У вас возникли вопросы?</span>
+                            <button type="button" class="btn_modal" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Задать вопрос
+                            </button>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Заказ звонка
+                                            </h5>
+                                            <button type="button" class="btn-close btn-close-white"
+                                                data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="d-flex align-items-center flex-lg-column flex-wrap">
+                                                <div class="form_input_modal">
+                                                    <label for="exampleFormControlInput1"
+                                                        class="form-label form_text">ФИО</label>
+                                                    <input type="name" class="form-control"
+                                                        id="exampleFormControlInput1"
+                                                        placeholder="Иванов Иван Иванович">
+                                                </div>
+                                                <div class="form_input_modal">
+                                                    <label for="exampleFormControlTextarea1"
+                                                        class="form-label form_text">Телефон</label>
+                                                    <input type="phone" class="form-control"
+                                                        placeholder="+7 961 114 5503">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type=" submit"
+                                                class="btn btn-primary h-25 form_btn">Отправить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <!-- Кнопка-триггер модального окна -->
+                            <button type="button" class="btn btn-primary btn-lg header_button py-2 px-4"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Заказать
+                                звонок
+                            </button>
+
+                            <!-- Модальное окно -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Заказ звонка
+                                            </h5>
+                                            <button type="button" class="btn-close btn-close-white"
+                                                data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="d-flex align-items-center flex-lg-column flex-wrap">
+                                                <div class="form_input_modal">
+                                                    <label for="exampleFormControlInput1"
+                                                        class="form-label form_text">ФИО</label>
+                                                    <input type="name" class="form-control"
+                                                        id="exampleFormControlInput1"
+                                                        placeholder="Иванов Иван Иванович">
+                                                </div>
+                                                <div class="form_input_modal">
+                                                    <label for="exampleFormControlTextarea1"
+                                                        class="form-label form_text">Телефон</label>
+                                                    <input type="phone" class="form-control"
+                                                        placeholder="+7 961 114 5503">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type=" submit"
+                                                class="btn btn-primary h-25 form_btn">Отправить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header_thirdpart col-12">
+            <div class="container d-flex justify-content-between align-items-center py-3">
+                <a href="#" class="header_anchor">Объемные буквы</a>
+                <a href="signs.html" class="header_anchor">Вывески</a>
+                <a href="#" class="header_anchor">Информационные стенды</a>
+                <a href="#" class="header_anchor">Световые короба (лайт-боксы)</a>
+                <a href="#" class="header_anchor">Pos-материалы</a>
+                <a href="#" class="header_anchor">Таблички</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="signs_headers my-5">Вывески</h2>
+                </div>
+            </div>
+            <div class="signs_content px-4 py-4 d-flex">
+                <img src="img/sign.jpg" class="sign_img" alt="">
+                <div class="sign_description">
+                    <p class="signs_text">Что такое вывеска? Это визитная карточка компании, играющая
+                        большую роль в
+                        имидже и развитии
+                        предприятия. Главный элемент наружной рекламы, который работает даже в вечернее и ночное время
+                        суток, когда вы отдыхаете!</p>
+                    <p class="signs_text mt-5 mb-3">Хотите сделать заказ или задать вопрос?</p>
+                    <button type="button" class="btn btn-primary btn-lg header_button py-3 px-4" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Связаться с
+                        нами
+                    </button>
+                </div>
+            </div>
+            <div class="signs_block row my-4">
+                <p class="signs_text">Вывески располагаются на фасадах, крышах, углах, торцах зданий, внутри помещений.
+                    Они могут состоять
+                    как из цельной конструкции, так и из отдельных элементов; делятся на плоские и объемные, световые,
+                    не световые. Изготавливаются из целого ряда материалов: пластик ПВХ, металл, композитные панели,
+                    акриловое стекло, сотовый поликарбонат, баннера, различные профиля, широкоформатная печать,
+                    плоттерная резка, UV печать, применение лазерных и фрезерных станков.</p>
+                <p class="signs_text">Подсветка вывесок осуществляется как с помощью внешних источников подсветки, так и
+                    с помощью
+                    светодиодных систем, люминесцентных ламп, неоновых трубок.</p>
+                <p class="signs_text">Техническое исполнение вывески может быть очень разным – от маленькой таблички до
+                    крышной установки,
+                    наша компания сделает все быстро и качественно , специально для вас!</p>
+            </div>
+            <div class="my-4">
+                <h4 class="services_headers">Прайс лист на изготовление вывесок</h4>
+                <ul class="ul_text">
+                    <li>Материалы:</li>
+                    <li>Акриловое стекло</li>
+                    <li>Пластик ПВХ</li>
+                    <li>Светодиодные кластеры</li>
+                    <li>Пленка ORACAL</li>
+                </ul>
+            </div>
+            <table class="iksweb w-100 signs_table signs_table_desktop" cellpadding="5px">
+                <thead>
+                    <tr>
+                        <td colspan="3" rowspan="2"><b>Материалы</b></td>
+                        <td colspan="9"><b>Высота букв</b></td>
+                    </tr>
+                    <tr>
+                        <td>1-20 см</td>
+                        <td>21-30 см</td>
+                        <td>31-40 см</td>
+                        <td>41-50 см</td>
+                        <td>51-60 см</td>
+                        <td>61-70 см</td>
+                        <td>71-80 см</td>
+                        <td>81-90 см</td>
+                        <td>91-100 см</td>
+                    </tr>
+                </thead>
+                <tbody class="table_price">
+                    <tr>
+                        <td colspan="3" class="signs_list">ПВХ 5 мм</td>
+                        <td>200 р</td>
+                        <td>260 р</td>
+                        <td>340 р</td>
+                        <td>470 р</td>
+                        <td>580 р</td>
+                        <td>700 р</td>
+                        <td>820 р</td>
+                        <td>1030 р</td>
+                        <td>1250 р</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="signs_list">ПВХ 10 мм</td>
+                        <td>220 р</td>
+                        <td>320 р</td>
+                        <td>420 р</td>
+                        <td>570 р</td>
+                        <td>720 р</td>
+                        <td>870 р</td>
+                        <td>1040 р</td>
+                        <td>1300 р</td>
+                        <td>1575 р</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="signs_list">Объемные без подсветки</td>
+                        <td>450 р</td>
+                        <td>600 р</td>
+                        <td>750 р</td>
+                        <td>950 р</td>
+                        <td>1150 р</td>
+                        <td>1500 р</td>
+                        <td>1900 р</td>
+                        <td>2400 р</td>
+                        <td>2700 р</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="signs_list">Объемные с подсветкой</td>
+                        <td>1750 р</td>
+                        <td>1950 р</td>
+                        <td>2450 р</td>
+                        <td>2850 р</td>
+                        <td>3600 р</td>
+                        <td>4900 р</td>
+                        <td>6600 р</td>
+                        <td>7900 р</td>
+                        <td>9250 р</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="iksweb w-100 signs_table signs_table_mobile" cellpadding="5px">
+                <thead>
+                    <tr>
+                        <td rowspan="2">Высота букв</td>
+                        <td colspan="4">Материалы</td>
+                    </tr>
+                    <tr>
+                        <td>ПВХ 5 мм</td>
+                        <td>ПВХ 10 мм</td>
+                        <td>Объемные без подсветки</td>
+                        <td>Объемные с подсветкой</td>
+                    </tr>
+                </thead>
+                <tbody class="table_price">
+                    <tr>
+                        <td>1-20 см</td>
+                        <td>200 р</td>
+                        <td>220 р</td>
+                        <td>450 р</td>
+                        <td>1750 р</td>
+                    </tr>
+                    <tr>
+                        <td>21-30 см</td>
+                        <td>260 р</td>
+                        <td>320 р</td>
+                        <td>600 р</td>
+                        <td>1950 р</td>
+                    </tr>
+                    <tr>
+                        <td>31-40 см</td>
+                        <td>340 р</td>
+                        <td>420 р</td>
+                        <td>750 р</td>
+                        <td>2450 р</td>
+                    </tr>
+                    <tr>
+                        <td>41-50 см</td>
+                        <td>470 р</td>
+                        <td>570 р</td>
+                        <td>950 р</td>
+                        <td>2850 р</td>
+                    </tr>
+                    <tr>
+                        <td>51-60 см</td>
+                        <td>580 р</td>
+                        <td>720 р</td>
+                        <td>1150 р</td>
+                        <td>3600 р</td>
+                    </tr>
+                    <tr>
+                        <td>61-70 см</td>
+                        <td>700 р</td>
+                        <td>870 р</td>
+                        <td>1500 р</td>
+                        <td>4900 р</td>
+                    </tr>
+                    <tr>
+                        <td>71-80 см</td>
+                        <td>820 р</td>
+                        <td>1040 р</td>
+                        <td>1900 р</td>
+                        <td>6600 р</td>
+                    </tr>
+                    <tr>
+                        <td>81-90 см</td>
+                        <td>1030 р</td>
+                        <td>1300 р</td>
+                        <td>2400 р</td>
+                        <td>7900 р</td>
+                    </tr>
+                    <tr>
+                        <td>91-100 см</td>
+                        <td>1250 р</td>
+                        <td>1575 р</td>
+                        <td>2700 р</td>
+                        <td>9250 р</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="signs_works mt-5 mb-4">
+                <span class="services_headers">Прайс лист на изготовление вывесок</span>
+            </div>
+            <Fancybox class="gallery" options={{ infinite: false }}>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-4">
+                            <img data-fancybox="gallery" src="img/work1.jpg" data-src="img/work1.jpg"
+                                className="button button--secondary">
+                            </img>
+                        </div>
+
+                        <div class="col-4">
+                            <img data-fancybox="gallery" src="img/work2.jpg" data-src="img/work2.jpg"
+                                className="button button--secondary">
+                            </img>
+                        </div>
+
+                        <div class="col-4">
+                            <img data-fancybox="gallery" src="img/work3.jpg" data-src="img/work3.jpg"
+                                className="button button--secondary">
+                            </img>
+                        </div>
+                    </div>
+                </div>
+            </Fancybox>
+        </div>
+        <form class="container content_form mt-5 px-4 py-4">
+            <span class="form_header">Вы хотите сделать заказ или задать вопрос?</span>
+            <div class="d-flex align-items-center justify-content-between flex-wrap mt-3">
+                <div class="form_input">
+                    <label for="exampleFormControlInput1" class="form-label form_text">ФИО</label>
+                    <input type="name" class="form-control" id="exampleFormControlInput1"
+                        placeholder="Иванов Иван Иванович">
+                </div>
+                <div class="form_input">
+                    <label for="exampleFormControlTextarea1" class="form-label form_text">Телефон</label>
+                    <input type="phone" class="form-control" placeholder="+7 961 114 5503">
+                </div>
+                <div class="align-self-end form_button">
+                    <button type=" submit" class="btn btn-primary h-25 form_btn">Отправить</button>
+                </div>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row footer_mobile">
+                <div class="col-4">
+                    <div class="d-flex align-items-center flex pt-5">
+                        <img src="img/footerlogo.png" class="pe-2" alt="some img">
+                        <h5 class="header_secondpar">ООО “ЛЕВЕЛ АП”</h5>
+                    </div>
+                    <div class="d-flex flex-lg-column pt-4">
+                        <p class="header_firstpar pb-2">Где мы находимся</p>
+                        <a href="#map" class="header_secondpar">г.
+                            Новосибирск, поселок Садовый ,ул. Российская 15</a>
+                    </div>
+                    <div class="d-flex flex-lg-column pt-4">
+                        <span class="header_firstpar pb-2">Телефон для заказов и вопросов:</span>
+                        <a href="tel:+7 (913) 917 07 82" class="header_secondpar">+7 (913) 917 07 82</a>
+                    </div>
+                    <div class="d-flex flex-lg-column pt-4">
+                        <span class="header_firstpar pb-2">Почта для связи:</span>
+                        <a href="mailto:boss_level_up@bk.ru" class="header_secondpar">boss_level_up@bk.ru</a>
+                    </div>
+                    <div class="d-flex flex-lg-column pt-4">
+                        <nav class="navbar">
+                            <div>
+                                <a class="navbar-brand footer_anchor" href="#">
+                                    <img src="img/vk_icon.svg" alt="" width="30" height="24"
+                                        class="d-inline-block align-text-top">
+                                    boss_level_up
+                                </a>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="d-flex flex-lg-column pb-4">
+                        <nav class="navbar">
+                            <div>
+                                <a class="navbar-brand footer_anchor" href="#">
+                                    <img src="img/inst_icon.svg" alt="" width="30" height="24"
+                                        class="d-inline-block align-text-top">
+                                    boss_level_up
+                                </a>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <div id="map" class="col-8 map_mobile">
+                    <img src="img/footer_map.jpg" class="w-100" alt="map">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="scripts/fancybox.js"></script>
+</body>
+
+</html>

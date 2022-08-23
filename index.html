@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="bootstrap-5.2.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <script src="https://kit.fontawesome.com/9b6b8cbbac.js" crossorigin="anonymous"></script>
+    <title>Level up</title>
+</head>
+
+<body>
+    <header>
+        <div class="header_firstpart">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-4">
+                        <div class="d-flex flex-lg-column py-3">
+                            <span class="header_firstpar pb-2">Где мы находимся</span>
+                            <a href="#map" class="header_secondpar">г.
+                                Новосибирск, поселок Садовый ,ул. Российская 15</a>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="d-flex flex-lg-column py-3">
+                            <span class="header_firstpar pb-2">Телефон для заказов и вопросов:</span>
+                            <a href="tel:+7 (913) 917 07 82" class="header_secondpar header_phone">+7 (913) 917 07
+                                82</a>
+                        </div>
+                    </div>
+                    <div class="col-4 d-flex justify-content-between py-3 align-items-center">
+                        <div class="">
+                            <p class="header_firstpar">Почта для связи:</p>
+                            <a href="mailto:boss_level_up@bk.ru" class="header_secondpar">boss_level_up@bk.ru</a>
+                        </div>
+                        <div class="">
+                            <a href="#" class="vk_icon pe-2"><img src="img/vk_icon.svg" alt="icon"></a>
+                            <a href="#"><img src="img/inst_icon.svg" alt="icon"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header_secondpart">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-7 d-flex align-items-center justify-content-between header_question_block">
+                        <div class="container-fluid navbar_button">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                                <i class="fa-solid fa-bars"></i>
+                            </button>
+                            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                                aria-labelledby="offcanvasNavbarLabel">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Level Up</h5>
+                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                                        aria-label="Закрыть"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" aria-current="page" href="#">Главная</a>
+                                        </li>
+                                        <form class="d-flex" role="search">
+                                            <input class="form-control me-2" type="search" placeholder="Поиск"
+                                                aria-label="Поиск">
+                                            <button class="btn btn-outline-success" type="submit">Поиск</button>
+                                        </form>
+                                        <li class="nav-item">
+                                            <a class="nav-link mt-3" href="#">Объемные буквы</a>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link active" aria-current="page" href="signs.html">Вывески</a>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link active" aria-current="page" href="#">Информационные
+                                                стенды</a>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link active" aria-current="page" href="#">Световые короба
+                                                (лайт-боксы)</a>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link active" aria-current="page" href="#">Pos-материалы</a>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link active" aria-current="page" href="#">Таблички</a>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <div class="d-flex align-items-center flex pt-5">
+                                                <img src="img/footerlogo.png" class="pe-2" alt="some img">
+                                                <h5 class="header_secondpar">ООО “ЛЕВЕЛ АП”</h5>
+                                            </div>
+                                            <div class="d-flex flex-lg-column pt-4">
+                                                <p class="header_firstpar pb-2">Где мы находимся</p>
+                                                <a href="#map" class="header_secondpar">г.
+                                                    Новосибирск, поселок Садовый ,ул. Российская 15</a>
+                                            </div>
+                                            <div class="d-flex flex-lg-column pt-4">
+                                                <span class="header_firstpar pb-2">Телефон для заказов и
+                                                    вопросов:</span>
+                                                <a href="tel:+7 (913) 917 07 82" class="header_secondpar">+7 (913) 917
+                                                    07 82</a>
+                                            </div>
+                                            <div class="d-flex flex-lg-column pt-4">
+                                                <span class="header_firstpar pb-2">Почта для связи:</span>
+                                                <a href="mailto:boss_level_up@bk.ru"
+                                                    class="header_secondpar">boss_level_up@bk.ru</a>
+                                            </div>
+                                            <div class="d-flex flex-lg-column pt-4">
+                                                <nav class="navbar">
+                                                    <div>
+                                                        <a class="navbar-brand footer_anchor" href="#">
+                                                            <img src="img/vk_icon.svg" alt="" width="30" height="24"
+                                                                class="d-inline-block align-text-top">
+                                                            boss_level_up
+                                                        </a>
+                                                    </div>
+                                                </nav>
+                                            </div>
+                                            <div class="d-flex flex-lg-column pb-4">
+                                                <nav class="navbar">
+                                                    <div>
+                                                        <a class="navbar-brand footer_anchor" href="#">
+                                                            <img src="img/inst_icon.svg" alt="" width="30" height="24"
+                                                                class="d-inline-block align-text-top">
+                                                            boss_level_up
+                                                        </a>
+                                                    </div>
+                                                </nav>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="index.html"><img src="img/main_img.png" alt="some img"></a>
+                        <h1 class="header_logo_h">Рекламно - производственная компания </h1>
+                    </div>
+                    <div class="col-5 d-flex align-items-center justify-content-between">
+                        <div class="header_help d-flex flex-lg-column">
+                            <span class="header_firstpar pb-3">У вас возникли вопросы?</span>
+                            <button type="button" class="btn_modal" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Задать вопрос
+                            </button>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <form class="ajax-contact-form" action="">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Заказ звонка
+                                                </h5>
+                                                <button type="button" class="btn-close btn-close-white"
+                                                    data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="d-flex align-items-center flex-lg-column flex-wrap">
+                                                    <div class="form_input_modal">
+                                                        <label for="exampleFormControlInput1"
+                                                            class="form-label form_text">ФИО</label>
+                                                        <input type="name" class="form-control"
+                                                            id="exampleFormControlInput1"
+                                                            placeholder="Иванов Иван Иванович" name="name">
+                                                    </div>
+                                                    <div class="form_input_modal">
+                                                        <label for="exampleFormControlTextarea1"
+                                                            class="form-label form_text">Телефон</label>
+                                                        <input type="tel" name="tel" class="form-control"
+                                                            placeholder="+7(961)-114-55-03">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <input type="submit" name="submit" class="btn btn-primary h-25 form_btn"
+                                                    value="Отправить">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <!-- Кнопка-триггер модального окна -->
+                            <button type="button" class="btn btn-primary btn-lg header_button py-2 px-4"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Заказать
+                                звонок
+                            </button>
+
+                            <!-- Модальное окно -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Заказ звонка
+                                            </h5>
+                                            <button type="button" class="btn-close btn-close-white"
+                                                data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="d-flex align-items-center flex-lg-column flex-wrap">
+                                                <div class="form_input_modal">
+                                                    <label for="exampleFormControlInput1"
+                                                        class="form-label form_text">ФИО</label>
+                                                    <input type="name" class="form-control"
+                                                        id="exampleFormControlInput1"
+                                                        placeholder="Иванов Иван Иванович">
+                                                </div>
+                                                <div class="form_input_modal">
+                                                    <label for="exampleFormControlTextarea1"
+                                                        class="form-label form_text">Телефон</label>
+                                                    <input type="phone" class="form-control"
+                                                        placeholder="+7 961 114 5503">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type=" submit"
+                                                class="btn btn-primary h-25 form_btn">Отправить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header_thirdpart col-12">
+            <div class="container d-flex justify-content-between align-items-center py-3">
+                <a href="#" class="header_anchor">Объемные буквы</a>
+                <a href="signs.html" class="header_anchor">Вывески</a>
+                <a href="#" class="header_anchor">Информационные стенды</a>
+                <a href="#" class="header_anchor">Световые короба (лайт-боксы)</a>
+                <a href="#" class="header_anchor">Pos-материалы</a>
+                <a href="#" class="header_anchor">Таблички</a>
+            </div>
+        </div>
+    </header>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/img/slider1_back.jpg" class="slider_desktop_img" alt="">
+                <img src="/img/slider_back1_mobile.png" class="slider_mobile_img" alt="">
+                <div class="slider_content">
+                    <div class="container">
+                        <p class="slider_header">Согласуем, нарисуем, изготовим, доставим,
+                            смонтируем
+                        </p>
+                        <button type="button" class="btn btn-primary btn-lg header_button slider_button py-3 px-5"
+                            data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Сделать
+                            заказ
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/img/slider2_back.jpg" class="slider_desktop_img" alt="">
+                <img src="/img/slider_back2_mobile.png" class="slider_mobile_img" alt="">
+                <div class="slider_content">
+                    <div class="container">
+                        <h2 class="slider_header slider_header_second">Действительно низкие и прозрачные цены
+                        </h2>
+                        <button type="button" class="btn btn-primary btn-lg header_button slider_button_2 py-3 px-5"
+                            data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Сделать
+                            заказ
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/img/slider3_back.jpg" class="slider_desktop_img" alt="">
+                <img src="/img/slider_back3_mobile.png" class="slider_mobile_img" alt="">
+                <div class="slider_content">
+                    <div class="container">
+                        <h2 class="slider_header">Всегда идем на встречу нашим клиентам!
+                        </h2>
+                        <span class="slider_paragraph mt-2">*в том числе и ночной монтаж</span><br>
+                        <button type="button" class="btn btn-primary btn-lg header_button slider_button_3 py-3 px-5"
+                            data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Сделать
+                            заказ
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="content_headers">Почему именно мы?</p>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col">
+                    <div class="card-body d-flex align-items-center benefits_article">
+                        <img src="img/benefits1.svg" class="px-2" alt="some img">
+                        <span class="benefits_paragraph">Качество от производителя - из первых рук</span>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card-body d-flex align-items-center benefits_article">
+                        <img src="img/benefits2.svg" class="px-2" alt="some img">
+                        <span class="benefits_paragraph">Оперативное выполнение заказов любой сложности </span>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card-body d-flex align-items-center benefits_article">
+                        <img src="img/benefits3.svg" class="px-2" alt="some img">
+                        <span class="benefits_paragraph">Бесплатная консультация по любому типу рекламных
+                            материалов</span>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card-body d-flex align-items-center benefits_article">
+                        <img src="img/benefits4.svg" class="px-2" alt="some img">
+                        <span class="benefits_paragraph">Бесплатный вызов замерщика</span>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card-body d-flex align-items-center benefits_article">
+                        <img src="img/benefits5.svg" class="px-2" alt="some img">
+                        <span class="benefits_paragraph">Гарантия на изделия и монтаж 2 года</span>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card-body d-flex align-items-center benefits_article">
+                        <img src="img/benefits6.svg" class="px-2" alt="some img">
+                        <span class="benefits_paragraph">Скидки постоянным клиентам до 30%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="services container">
+            <h2 class="content_headers">Наши услуги</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col">
+                    <div class="card h-100 services_article py-4 px-4">
+                        <img src="img/service1.jpg" class="card-img-top py-1 px-1" alt="...">
+                        <div class="card-body pe-1 ps-0">
+                            <h4 class="services_headers my-4">Объемные буквы</h4>
+                            <p class="services_paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed
+                                do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis
+                                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                                aute
+                                irure
+                                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                pariatur.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted"><a href="#" class="services_anchor">Подробнее</a></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 services_article py-4 px-4">
+                        <img src="img/service2.jpg" class="card-img-top py-1 px-1" alt="...">
+                        <div class="card-body pe-1 ps-0">
+                            <h4 class="services_headers my-4">Вывески</h4>
+                            <p class="services_paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed
+                                do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis
+                                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                                aute
+                                irure
+                                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                pariatur.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted"><a href="#" class="services_anchor">Подробнее</a></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 services_article py-4 px-4">
+                        <img src="img/service3.jpg" class="card-img-top py-1 px-1" alt="...">
+                        <div class="card-body pe-1 ps-0">
+                            <h4 class="services_headers my-4">Информационные стенды</h4>
+                            <p class="services_paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed
+                                do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis
+                                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                                aute
+                                irure
+                                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                pariatur.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted"><a href="#" class="services_anchor">Подробнее</a></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 services_article py-4 px-4">
+                        <img src="img/service4.jpg" class="card-img-top py-1 px-1" alt="...">
+                        <div class="card-body pe-1 ps-0">
+                            <h4 class="services_headers my-4">Световые короба <br>(лайт-боксы)</h4>
+                            <p class="services_paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed
+                                do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis
+                                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                                aute
+                                irure
+                                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                pariatur.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted"><a href="#" class="services_anchor">Подробнее</a></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 services_article py-4 px-4">
+                        <img src="img/service5.jpg" class="card-img-top py-1 px-1" alt="...">
+                        <div class="card-body pe-1 ps-0">
+                            <h4 class="services_headers my-4">Pos-материалы</h4>
+                            <p class="services_paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed
+                                do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis
+                                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                                aute
+                                irure
+                                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                pariatur.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted"><a href="#" class="services_anchor">Подробнее</a></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 services_article py-4 px-4">
+                        <img src="img/service6.jpg" class="card-img-top py-1 px-1" alt="...">
+                        <div class="card-body pe-1 ps-0">
+                            <h4 class="services_headers my-4">Таблички</h4>
+                            <p class="services_paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed
+                                do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis
+                                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                                aute
+                                irure
+                                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                pariatur.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted"><a href="#" class="services_anchor">Подробнее</a></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="container carousel_margin">
+            <div class="row mt-5 mb-4">
+                <div class="col-12">
+                    <span class="content_headers">Наши клиенты</span>
+                </div>
+            </div>
+            <div class="multiple-items d-flex align-items-center justify-content-around">
+                <div><a href="#"><img src="img/moxitologo.png" alt=""></a></div>
+                <div><a href="#"><img src="img/cropplogo.png" alt=""></a></div>
+                <div><a href="#"><img src="img/totachi.png" alt=""></a></div>
+                <div><a href="#"><img src="img/sibstroi.png" alt=""></a></div>
+                <div><a href="#"><img src="img/2gis.png" alt=""></a></div>
+                <div><a href="#"><img src="img/moxitologo.png" alt=""></a></div>
+                <div><a href="#"><img src="img/cropplogo.png" alt=""></a></div>
+                <div><a href="#"><img src="img/totachi.png" alt=""></a></div>
+                <div><a href="#"><img src="img/sibstroi.png" alt=""></a></div>
+                <div><a href="#"><img src="img/2gis.png" alt=""></a></div>
+            </div>
+        </div>
+        <form class="container content_form px-4 py-4">
+            <span class="form_header">Вы хотите сделать заказ или задать вопрос?</span>
+            <div class="d-flex align-items-center justify-content-between flex-wrap mt-3">
+                <div class="form_input">
+                    <label for="exampleFormControlInput1" class="form-label form_text">ФИО</label>
+                    <input type="name" class="form-control" id="exampleFormControlInput1"
+                        placeholder="Иванов Иван Иванович">
+                </div>
+                <div class="form_input">
+                    <label for="exampleFormControlTextarea1" class="form-label form_text">Телефон</label>
+                    <input type="phone" class="form-control" placeholder="+7 961 114 5503">
+                </div>
+                <div class="align-self-end form_button">
+                    <button type=" submit" class="btn btn-primary h-25 form_btn">Отправить</button>
+                </div>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row footer_mobile">
+                <div class="col-4">
+                    <div class="d-flex align-items-center flex pt-5">
+                        <img src="img/footerlogo.png" class="pe-2" alt="some img">
+                        <h5 class="header_secondpar">ООО “ЛЕВЕЛ АП”</h5>
+                    </div>
+                    <div class="d-flex flex-lg-column pt-4">
+                        <p class="header_firstpar pb-2">Где мы находимся</p>
+                        <a href="#map" class="header_secondpar">г.
+                            Новосибирск, поселок Садовый ,ул. Российская 15</a>
+                    </div>
+                    <div class="d-flex flex-lg-column pt-4">
+                        <span class="header_firstpar pb-2">Телефон для заказов и вопросов:</span>
+                        <a href="tel:+7 (913) 917 07 82" class="header_secondpar">+7 (913) 917 07 82</a>
+                    </div>
+                    <div class="d-flex flex-lg-column pt-4">
+                        <span class="header_firstpar pb-2">Почта для связи:</span>
+                        <a href="mailto:boss_level_up@bk.ru" class="header_secondpar">boss_level_up@bk.ru</a>
+                    </div>
+                    <div class="d-flex flex-lg-column pt-4">
+                        <nav class="navbar">
+                            <div>
+                                <a class="navbar-brand footer_anchor" href="#">
+                                    <img src="img/vk_icon.svg" alt="" width="30" height="24"
+                                        class="d-inline-block align-text-top">
+                                    boss_level_up
+                                </a>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="d-flex flex-lg-column pb-4">
+                        <nav class="navbar">
+                            <div>
+                                <a class="navbar-brand footer_anchor" href="#">
+                                    <img src="img/inst_icon.svg" alt="" width="30" height="24"
+                                        class="d-inline-block align-text-top">
+                                    boss_level_up
+                                </a>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <div id="map" class="col-8 map_mobile">
+                    <img src="img/footer_map.jpg" class="w-100" alt="map">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="bootstrap-5.2.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.0/dist/vue.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="scripts/slider.js"></script>
+    <script src="scripts/sendform.js"></script>
+</body>
+
+</html>

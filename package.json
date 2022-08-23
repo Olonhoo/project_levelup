@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.2.0",
+    "react": "^18.2.0",
+    "react-elastic-carousel": "^0.11.5",
+    "react-slick": "^0.29.0",
+    "slick-carousel": "^1.8.1",
+    "styled-components": "^5.3.5"
+  }
+}
